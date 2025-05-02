@@ -32,11 +32,13 @@ form {
 .subtext {
   color: #a9a9a9;
   font-weight: unset;
+  margin-bottom: 30px;
 }
 
 #sign-in,
 #sign-up {
-  width: 100%;
+  width: 50%;
+  padding: 5px;
 }
 
 a {
@@ -46,19 +48,43 @@ a {
 
 label {
   font-weight: bold;
+  padding-top: 6px;
 }
 
 input {
   width: 100%;
   height: 30px;
-  padding: 5px;
+  padding-top: 6px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
+.gender {
+  margin-top: 15px;
+}
 input[type="checkbox"],
 input[type="radio"] {
   width: max-content;
   height: max-content;
-  padding: 0;
+  margin-top: 6px;
+}
+
+.form-group-horizontal-control {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.form-input-control1 {
+  flex: 50%;
+}
+
+.form-input-control2 {
+  flex: 50%;
+}
+
+select {
+  width: 95%;
 }
 
 input[type="submit"] {
@@ -74,6 +100,9 @@ input[type="submit"] {
   outline: none;
   clear: left;
   cursor: pointer;
+  margin-right: 5%;
+  margin-left: 45%;
+  margin-top: 10px;
 }
 
 input[type="submit"]:hover {
@@ -82,4 +111,10 @@ input[type="submit"]:hover {
 
 .form select {
   height: 30px;
+}
+
+#flex-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: row, wrap;
 }
