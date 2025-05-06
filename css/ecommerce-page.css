@@ -24,6 +24,8 @@ header,
 section {
   padding: 20px 30px;
   color: white;
+  display: flex;
+  align-items: center;
 }
 
 section {
@@ -40,7 +42,7 @@ section {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
-  align-content: flex-start;
+  align-content: center;
   gap: 60px;
 }
 
@@ -65,6 +67,8 @@ section {
   padding: 10px 20px;
   border-radius: 20px;
   height: 45px;
+  display: flex;
+  align-items: center;
 }
 
 .search-bar input {
@@ -85,7 +89,7 @@ section {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  align-items: flex-end;
+  align-items: center;
   gap: 15px;
 }
 
@@ -93,6 +97,10 @@ section {
   min-width: 60px;
   text-transform: capitalize;
   cursor: pointer;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 15px;
 }
 
 .option i {
@@ -103,6 +111,10 @@ section {
 .categories {
   background-color: #2b2d36;
   padding-top: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-right: 9%;
 }
 
 .category {
@@ -247,6 +259,9 @@ i.fa-th-list {
 
 .lines .product {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
   padding: 20px;
 }
 
@@ -256,22 +271,23 @@ i.fa-th-list {
 }
 
 .lines .product-data {
-  flex-flow: row wrap;
-  justify-content: space-between;
+  display: flex;
+  flex-flow: column wrap;
   align-items: flex-start;
-  padding-left: 35px;
+  gap: 20px;
 }
 
 .lines .product-info {
   width: 600px;
   height: 100px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .lines .product-action {
-  justify-content: space-between;
-  border-left: 1px solid #8d8ba5;
-  padding-left: 30px;
-  min-width: 200px;
+  padding-top: 5px;
 }
 
 /* LINES-ACTION VIEW */
@@ -286,8 +302,6 @@ i.fa-th-list {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
-  justify-content: space-between;
-  padding: 20px;
 }
 
 .lines-action .product-image-wrapper {
@@ -295,20 +309,29 @@ i.fa-th-list {
   height: 200px;
 }
 
-.lines-action .product-data { 
+.lines-action .product-data {
   display: flex;
   flex-flow: row wrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
+  padding: 20px;
+  padding-left: 50px;
+  gap: 50px;
 }
 
 .lines-action .product-info {
-  width: 400px;
-  height: 200px;
+  width: 275px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  gap: 15px;
 }
 
 .lines-action .product-action {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
   border-left: 1px solid #8d8ba5;
-  padding-left: 30px;
   min-width: 200px;
+  padding: 50px;
 }
